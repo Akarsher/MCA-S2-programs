@@ -1,0 +1,97 @@
+man command:
+
+mits@mits-Veriton-M200-H510:~$ man ls
+
+DESCRIPTION
+       List information about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -a, --all
+              do not ignore entries starting with .
+
+       -A, --almost-all
+              do not list implied . and ..
+
+       --author
+              with -l, print the author of each file
+
+       -b, --escape
+              print C-style escapes for nongraphic characters
+
+cat command:
+
+mits@mits-Veriton-M200-H510:~$ cat -n india
+     1	india is my country
+     2	i love my country
+     3	all indians are my bros and sis
+     4	i am akarsh
+     5	a student at MITS
+     6	roll no. 6
+     7	mca student
+     8	currently in second sem
+     9	finished 1st sem exam yesterday
+    10	today is the first day of 2nd sem
+    11	first lab attended of linux
+    12	i recently joined a ibm course
+    13	about ai fundamentals 
+mits@mits-Veriton-M200-H510:~$ cat -n india | head -6 | tail -2
+     5	a student at MITS
+     6	roll no. 6
+mits@mits-Veriton-M200-H510:~$ cat -n india | tail -9 | head -2
+     5	a student at MITS
+     6	roll no. 6
+
+echo command:
+
+mits@mits-Veriton-M200-H510:~$ echo "god is love."
+god is love.
+mits@mits-Veriton-M200-H510:~$ man echo
+mits@mits-Veriton-M200-H510:~$ echo -n "god is love."
+god is love.mits@mits-Veriton-M200-H510:~$ man echo
+mits@mits-Veriton-M200-H510:~$ echo -e " god\n is\n love."
+ god
+ is
+ love.
+
+pwd commad:
+
+mits@mits-Veriton-M200-H510:~$ pwd
+/home/mits
+
+ls command:
+
+mits@mits-Veriton-M200-H510:~$ ls
+ akarsh_ACN   akarsh_python   Downloads     india   Public   'Screenshot from 2025-02-05 11-41-39.png'  'Screenshot from 2025-02-05 11-46-41.png'
+ akarsh_ADS   Desktop         gokulprasad   naji    queue.c  'Screenshot from 2025-02-05 11-46-32.png'   snap
+mits@mits-Veriton-M200-H510:~$ ls -a
+ .            akarsh_python   .cache      .gnupg        .local     Public                                    'Screenshot from 2025-02-05 11-46-41.png'   .thunderbird
+ ..           .bash_history   .config     gokulprasad   .mozilla   queue.c                                    snap
+ akarsh_ACN   .bash_logout    Desktop     india         naji      'Screenshot from 2025-02-05 11-41-39.png'   .ssh
+ akarsh_ADS   .bashrc         Downloads   .java         .profile  'Screenshot from 2025-02-05 11-46-32.png'   .sudo_as_admin_successful
+mits@mits-Veriton-M200-H510:~$ ls -r
+ snap                                      'Screenshot from 2025-02-05 11-46-32.png'   queue.c   naji    gokulprasad   Desktop         akarsh_ADS
+'Screenshot from 2025-02-05 11-46-41.png'  'Screenshot from 2025-02-05 11-41-39.png'   Public    india   Downloads     akarsh_python   akarsh_ACN
+mits@mits-Veriton-M200-H510:~$ ls -t
+'Screenshot from 2025-02-05 11-46-41.png'   Downloads                                  india        akarsh_ADS      queue.c       naji   Desktop
+'Screenshot from 2025-02-05 11-46-32.png'  'Screenshot from 2025-02-05 11-41-39.png'   akarsh_ACN   akarsh_python   gokulprasad   snap   Public
+mits@mits-Veriton-M200-H510:~$ ls -l
+total 460
+drwxrwxr-x 2 mits mits   4096 Feb  5 10:08  akarsh_ACN
+drwxrwxr-x 3 mits mits   4096 Jan  6 10:53  akarsh_ADS
+drwxrwxr-x 4 mits mits   4096 Dec 17 12:00  akarsh_python
+drwxr-xr-x 3 mits mits   4096 Jul 17  2024  Desktop
+drwxr-xr-x 2 mits mits   4096 Feb  5 11:45  Downloads
+drwxrwxr-x 3 mits mits   4096 Oct  9 14:38  gokulprasad
+-rw-rw-r-- 1 mits mits    295 Feb  5 10:46  india
+drwxrwxr-x 3 mits mits   4096 Sep 23 13:58  naji
+drwxr-xr-x 2 mits mits   4096 Oct 18  2022  Public
+-rw-rw-r-- 1 mits mits   1582 Dec  3 15:19  queue.c
+-rw-rw-r-- 1 mits mits 162968 Feb  5 11:41 'Screenshot from 2025-02-05 11-41-39.png'
+-rw-rw-r-- 1 mits mits 130687 Feb  5 11:46 'Screenshot from 2025-02-05 11-46-32.png'
+-rw-rw-r-- 1 mits mits 130687 Feb  5 11:46 'Screenshot from 2025-02-05 11-46-41.png'
+drwx------ 3 mits mits   4096 Sep  3 15:52  snap
+
+
+
+
