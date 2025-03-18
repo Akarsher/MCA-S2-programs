@@ -1,0 +1,27 @@
+SQL> declare
+  2  a integer;
+  3  b integer;
+  4  c integer;
+  5  begin
+  6  a := &a;
+  7  b := &b;
+  8  c := &c;
+  9  if (a>b and a>c) then
+ 10  dbms_output.put_line('largest value:'||a);
+ 11  elsif (b>c) then
+ 12  dbms_output.put_line('largest value:'||b);
+ 13  else
+ 14  dbms_output.put_line('largest value:'||c);
+ 15  end if;
+ 16  end;
+ 17  /
+Enter value for a: 10
+old   6: a := &a;
+new   6: a := 10;
+Enter value for b: 20
+old   7: b := &b;
+new   7: b := 20;
+Enter value for c: 15
+old   8: c := &c;
+new   8: c := 15;
+largest value:20
