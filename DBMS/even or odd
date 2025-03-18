@@ -1,0 +1,18 @@
+SQL> declare
+  2  a integer;
+  3  begin
+  4  a := &a;
+  5  if(mod(a,2)=0)
+  6  then
+  7  dbms_output.put_line(a||'is even');
+  8  else
+  9  dbms_output.put_line(a||'is odd');
+ 10  end if;
+ 11  end;
+ 12  /
+Enter value for a: 20
+old   4: a := &a;
+new   4: a := 20;
+20is even
+
+PL/SQL procedure successfully completed.
