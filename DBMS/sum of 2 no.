@@ -1,0 +1,17 @@
+SQL> set serveroutput on;
+SQL> declare
+  2  a integer;
+  3  b integer;
+  4  begin
+  5  a := &a;
+  6  b := &b;
+  7  dbms_output.put_line('entered value:'||(a+b));
+  8  end;
+  9  /
+Enter value for a: 10
+old   5: a := &a;
+new   5: a := 10;
+Enter value for b: 20
+old   6: b := &b;
+new   6: b := 20;
+entered value:30
