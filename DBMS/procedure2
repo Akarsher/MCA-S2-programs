@@ -1,0 +1,19 @@
+
+SQL> create or replace procedure display_max(highestmark out number)is
+  2  begin
+  3  select max(mark) into highestmark from student;
+  4  end;
+  5  /
+
+Procedure created.
+
+SQL> variable v_maxmark number;
+SQL> exec display_max(:v_maxmark);
+
+PL/SQL procedure successfully completed.
+
+SQL> print v_maxmark;
+
+ V_MAXMARK
+----------
+        85
