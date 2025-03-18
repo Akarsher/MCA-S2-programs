@@ -1,0 +1,11 @@
+
+SQL> create or replace procedure greetings as
+  2  begin
+  3  dbms_output.put_line('hello world!');
+  4  end;
+  5  /
+
+Procedure created.
+
+SQL> execute greetings;
+hello world!
