@@ -17,3 +17,13 @@ SQL> print v_maxmark;
  V_MAXMARK
 ----------
         85
+another method to execute:
+
+SQL> declare
+  2  v_mark number;
+  3  begin
+  4  display_max(v_mark);
+  5  dbms_output.put_line('highest mark'||v_mark);
+  6  end;
+  7  /
+highest mark85
