@@ -1,17 +1,21 @@
-echo "enter a number : "
-read a
-flag=0
-for ((i=2;i<=a;i++))
-  do 
-  if ((a % i==0))
-  then 
-  	flag=1
-  	break
-  fi
-  done 
-if ((flag == 1))
-then  
-	echo "$a is prime number"
+read -p "enter a number :" num 
+prime=1
+if [ $num -le 1 ]
+then
+    prime=0
 else
-	echo "$a is not prime number"	 
+    for((i=2;i*i<=num;i++))
+    do 
+    if (( $num % $i == 0 ))
+    then
+        prime=0
+        break
+    fi
+    done
+fi 
+if(($prime == 1))
+then 
+echo "it is a prime number."
+else
+echo "it is not a prime number."
 fi
