@@ -5,7 +5,7 @@ echo "select the operation to perform:"
 s=1
 while [ $s == 1 ]
 do 
-echo "1.addition\n2.subtraction\n3.multiplication\n4.division"
+echo -e "1.addition\n2.subtraction\n3.multiplication\n4.division"
 read n
 
 case $n in
